@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="VendaJPA">
+		<class>beans.Cidade</class>
+		<class>beans.Escola</class>
+		<class>beans.Cursos</class>
+		<class>beans.Carteirinha</class>
+		<class>beans.PasseValor</class>
+		<class>beans.TipoPasse</class>
+		<class>beans.Itens_Estoque</class>
+		<class>beans.Estoque</class>
+		<class>beans.Usuarios</class>
+		<class>beans.Caixa</class>
+		<class>beans.Movimento</class>
+		<class>beans.Movimento_pagamento</class>
+		<class>beans.FormaPagamento</class>
+		<class>beans.Pessoa</class>
+		<class>beans.PessoaFisica</class>
+		<class>beans.PessoaJuridica</class>
+		<class>beans.Venda</class>
+		<class>beans.VendaItem</class>
+	<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/venda"/>
+			<property name="javax.persistence.jdbc.user" value="postgres"/>
+			<property name="javax.persistence.jdbc.password" value="masterkey"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+		</properties>
+	</persistence-unit>
+</persistence>
